@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepti naših babic - Pregled receptov</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="glavni-naslov">Zbirka domačih receptov</h1>
+        <p>Poiščite najljubšo jed iz vaše najljubše slovenske regije</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Domov</a></li>
+            <li><a href="recepti.html" class="aktiven">Pregled receptov</a></li>
+            <li><a href="prispevaj.html">Prispevaj recept</a></li>
+        </ul>
+    </nav>
+
+    <main class="vsebina-kontejner">
+        <section class="kartica">
+            <h2>Iskanje in filtriranje</h2>
+            <div class="iskanje-okvir">
+                <label for="vnos-iskanje">Išči po imenu ali regiji:</label>
+                <input type="text" id="vnos-iskanje" placeholder="Npr. Potica ali Gorenjska...">
+            </div>
+        </section>
+
+        <section class="kartica">
+            <table id="tabela-receptov">
+                <caption>Seznam tradicionalnih slovenskih jedi</caption>
+                <thead>
+                    <tr>
+                        <th>Ime jedi</th>
+                        <th>Regija</th>
+                        <th>Čas priprave</th>
+                        <th>Zahtevnost</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr data-opis="Sestavine: 500g moke, 25g kvasa, 2.5dl mleka, 80g sladkorja, 80g masla, 2 rumenjaka, ščepec soli. Nadev: 400g mletih orehov, 2dl sladke smetane, 150g sladkorja, 1 vanilijev sladkor, cimet, rum, 2 beljaka (sneg). Postopek: Zamesimo vzhajano kvašeno testo in ga pustimo vzhajati 45 minut. Pripravimo orehov nadev iz vročega mleka/smetane, orehov in beljakovega snega. Testo razvaljamo, premažemo z nadevom, tesno zvijemo in položimo v potičnik. Vzhajamo še 30 minut in pečemo pri 180 °C približno 50–60 minut.">
+                        <td>Slovenska potica</td>
+                        <td>Osrednjeslovenska</td>
+                        <td>180 min</td>
+                        <td>Zahtevno</td>
+                    </tr>
+
+                    <tr data-opis="Sestavine: 500g kislega zelja, 300g fižola v zrnju, 4 krompirji, 1 čebula, 2 stroka česna, 1 žlica paradižnikove mezge, 200g suhih svinjskih reber ali kranjska klobasa, sol, poper, lovorov list. Postopek: Posebej skuhamo namočen fižol in posebej kislo zelje s suhim mesom ter lovorovim listom. Krompir skuhamo v kosih in ga delno pretlačimo. Združimo zelje, fižol in krompir, dodamo prepraženo čebulo s česnom in paradižnikovo mezgo ter vse skupaj počasi kuhamo še 20–30 minut, da se okusi povežejo.">
+                        <td>Jota</td>
+                        <td>Primorska</td>
+                        <td>90 min</td>
+                        <td>Srednje</td>
+                    </tr>
+
+                    <tr data-opis="Sestavine: 500g ajdove moke, 1.5 l vode, sol, 100g ocvirkov ali masti za zabelo. Postopek: V slani krop vsujemo ajdovo moko v enem kosu. V sredini narežemo luknjo z ročajem kuhalnice in počasi kuhamo 20 minut. Odlijemo večino žgancevke (vode), moko z ročajem kuhalnice dobro razdrobimo ter premešamo, nato po potrebi dolijemo malo odliti tekočine. Žgance nadrobimo v skledo in jih obilno zabelimo z vročimi ocvirki.">
+                        <td>Ajdovi žganci</td>
+                        <td>Gorenjska</td>
+                        <td>30 min</td>
+                        <td>Enostavno</td>
+                    </tr>
+
+                    <tr data-opis="Sestavine: Vlečeno ali krhko testo. Nadevi: 1. Makov nadev (300g mletega maka, sladkor, mleko), 2. Skutni nadev (500g skute, 1 jajce, sladkor), 3. Orehov nadev (300g orehov, sladkor), 4. Jabolčni nadev (500g naribanih jabolk, cimet). Polivka: kisla smetana in jajce. Postopek: V pekač nalagamo plasti testa in izmenično vsak nadev, ki ga prelijemo s smetanovo polivko. Postopek ponovimo dvakrat (skupaj 8 plasti nadeva). Pečemo pri 180 °C približno 60 minut, da se zlato porumeni.">
+                        <td>Prekmurska gibanica</td>
+                        <td>Prekmurje</td>
+                        <td>120 min</td>
+                        <td>Zahtevno</td>
+                    </tr>
+
+                    <tr data-opis="Sestavine: Testo: 300g moke, 1-2 jajci, malo vode ali mleka, sol. Nadev (šlikrofanca): 400g krompirja, 50g zaseke ali sesekljane slanine, čebula, drobnjak, majaron, sol, poper. Postopek: Skuhamo krompir in ga pretlačimo še vročega. Dodamo prepraženo čebulo na zaseki ter začimbe. Oblikujemo kroglicam podobne kroglice nadeva. Testo tanko razvaljamo, nanj polagamo kroglice, preklopimo testo, izrežemo in oblikujemo značilno obliko žlikrofov (v sredini vtisnemo vdolbinico). Kuhamo v slanem kropu, dokler ne izplavajo.">
+                        <td>Idrijski žlikrofi</td>
+                        <td>Goriška</td>
+                        <td>75 min</td>
+                        <td>Zahtevno</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+        <section id="podrobnosti-okvir" class="kartica">
+            <h3 id="podrobnosti-naslov">Podrobnosti recepta</h3>
+            <p id="podrobnosti-besedilo">Izberite recept iz tabele za ogled podrobnosti.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Projektna naloga, Računalniški sistemi in omrežja, 4. letnik</p>
+    </footer>
+
+    <script src="skripta.js"></script>
+</body>
+</html>

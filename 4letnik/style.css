@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #fdfbf7;
+    color: #4a3b32;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Glava */
+
+header {
+    background-color: #8c2d19;
+    color: #ffffff;
+    text-align: center;
+    padding: 32px 16px;
+}
+
+#glavni-naslov {
+    font-size: 35px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+/* Navigacija */
+
+nav {
+    background-color: #5c1d0e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li a {
+    display: block;
+    color: #fdfbf7;
+    text-decoration: none;
+    padding: 16px 24px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+nav li a:hover,
+nav li a.aktiven {
+
+    background-color: #8c2d19;
+
+}
+
+/* Glavna vsebina in postavitve */
+
+.vsebina-kontejner {
+    width: 100%;
+    max-width: 1000px;
+    margin: 32px auto;
+    padding: 0 16px;
+    flex: 1;
+}
+
+.kartica {
+    background-color: #ffffff;
+    border: 1px solid #e8dec8;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+}
+
+article li{
+    margin-left: 16px;
+}
+
+.dvo-stolpec {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.dvo-stolpec > * {
+    flex: 1;
+    min-width: 280px;
+
+}
+
+/* Slike */
+
+.slika-okvir {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.odzivna-slika {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+/* Elementi obrazca */
+
+.obrazec-skupina {
+    margin-bottom: 19px;
+}
+
+.obrazec-skupina label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fafafa;
+
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #8c2d19;
+    background-color: #ffffff;
+}
+
+.radio-skupina {
+    display: flex;
+    gap: 24px;
+}
+
+.radio-skupina label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Gumbi */
+
+.gumb {
+    background-color: #8c2d19;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gumb:hover {
+    background-color: #6b2213;
+}
+
+/* Tabela */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #8c2d19;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e8dec8;
+}
+
+th {
+    background-color: #f7f1e5;
+    color: #4a3b32;
+}
+
+tbody tr {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+tbody tr:hover {
+    background-color: #faf3e0;
+}
+
+/* Pomagala in stanja */
+
+.skrito {
+    display: none !important;
+}
+
+.poravnava-center {
+    text-align: center;
+}
+
+.sporocilo {
+    padding: 16px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.sporocilo.napaka {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.sporocilo.uspeh {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Noga */
+
+footer {
+    background-color: #4a3b32;
+    color: #fdfbf7;
+    text-align: center;
+    padding: 16px;
+    margin-top: auto;
+}

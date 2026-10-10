@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepti naših babic - Prispevaj recept</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="glavni-naslov">Prispevajte svoj recept</h1>
+        <p>Delite družinske kulinarične skrivnosti z ostalimi ljubitelji domače hrane</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Domov</a></li>
+            <li><a href="recepti.html">Pregled receptov</a></li>
+            <li><a href="prispevaj.html" class="aktiven">Prispevaj recept</a></li>
+        </ul>
+    </nav>
+
+    <main class="vsebina-kontejner">
+        <section class="kartica">
+            <h2>Obrazec za vnos recepta</h2>
+            
+            <div id="sporočilo-napaka" class="sporocilo napaka skrito"></div>
+            <div id="sporočilo-uspeh" class="sporocilo uspeh skrito"></div>
+
+            <form id="obrazec-recept">
+
+                <div class="obrazec-skupina">
+                    <label for="ime-avtorja">Vaše ime in priimek:</label>
+                    <input type="text" id="ime-avtorja" name="imeAvtorja">
+                </div>
+
+                <div class="obrazec-skupina">
+                    <label for="email-avtorja">Vaš e-poštni naslov:</label>
+                    <input type="email" id="email-avtorja" name="emailAvtorja">
+                </div>
+
+                <div class="obrazec-skupina">
+                    <label for="ime-jedi">Ime recepta / jedi:</label>
+                    <input type="text" id="ime-jedi" name="imeJedi">
+                </div>
+
+                <div class="obrazec-skupina">
+                    <label for="regija-jedi">Regija izvora:</label>
+
+                    <select id="regija-jedi" name="regijaJedi">
+                        <option value="">-- Izberite regijo --</option>
+                        <option value="Gorenjska">Gorenjska</option>
+                        <option value="Štajerska">Štajerska</option>
+                        <option value="Primorska">Primorska</option>
+                        <option value="Prekmurje">Prekmurje</option>
+                        <option value="Dolenjska">Dolenjska</option>
+                        <option value="Osrednjeslovenska">Osrednjeslovenska</option>
+                    </select>
+                </div>
+
+                <div class="obrazec-skupina">
+                    <label>Zahtevnost priprave:</label>
+
+                    <div class="radio-skupina">
+                        <label><input type="radio" name="zahtevnost" value="Enostavno"> Enostavno</label>
+                        <label><input type="radio" name="zahtevnost" value="Srednje"> Srednje</label>
+                        <label><input type="radio" name="zahtevnost" value="Zahtevno"> Zahtevno</label>
+                    </div>
+                </div>
+
+                <div class="obrazec-skupina">
+                    <label for="postopek">Postopek priprave in sestavine:</label>
+                    <textarea id="postopek" name="postopek" rows="5"></textarea>
+                </div>
+
+                <button type="submit" class="gumb">Oddaj recept</button>
+            </form>
+        </section>
+
+        <section id="prikaz-prispevka" class="kartica skrito">
+            <h2>Uspešno oddan recept!</h2>
+            <div id="vsebina-prispevka"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projektna naloga, Računalniški sistemi in omrežja, 4. letnik</p>
+    </footer>
+
+    <script src="skripta.js"></script>
+</body>
+</html>
